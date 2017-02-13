@@ -1,0 +1,66 @@
+*{
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 720px;
+}
+#basic_info_list{
+    margin-top: 20px;
+}
+.basic_info{
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+}
+.basic_info table{
+     width: 100%;
+     height:30px;
+ }
+.basic_info table a{
+    color: #0078b3;
+}
+.basic_info table th{
+    background-color: #d6d6d6;
+    color: #38393d;
+    height: 20px;
+}
+table tr:hover{
+    cursor:pointer;
+    background-color: #c9c9c9;
+    color: #fefff5;
+}
+.basic_info table tr td select{
+    margin: 0;
+    padding: 0;
+    height:30px;
+}
+.basic_info table tr td p{
+    padding: 0;
+    margin: 0;
+    float: right;
+}
+.basic_info table td:first-child {
+    background-color: #e4e4e4;
+    width :10%;
+}
+.basic_info table td:nth-child(2){
+    width :20%;
+}
+.basic_info table td:nth-child(3){
+    background-color: #e4e4e4;
+    width :10%;
+}
+.basic_info table td:nth-child(4){
+     width :20%;
+}
+.tabbable{
+    margin-top: 20px;
+}
+.tabbable ul a{
+    color: #0b94e8;
+    font-weight: 800;
+}

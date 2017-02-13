@@ -1,0 +1,57 @@
+.box-container {
+  font-size: 12px;
+  line-height: 1.5;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+.box-container .more{
+   color: #0b80c9;
+}
+.box-container a{
+    text-decoration: none;
+    font-family: "Segoe UI", "Lucida Grande", Helvetica, Arial, "Microsoft YaHei", FreeSans, Arimo, "Droid Sans", "wenquanyi micro hei", "Hiragino Sans GB", "Hiragino Sans GB W3", "FontAwesome", sans-serif;
+}
+.box-container .box-head-list h3{
+    color: #fbf8e9;
+    background-color: #0b80c9;
+    padding: 10px;
+    border-bottom: 2px solid #6d87ff;
+    display: inline-block;
+    position: relative;
+}
+.box-container ol,
+.box-container ul,
+.box-container h3,
+.box-container li {
+	margin: 0;
+  padding: 0;
+}
+.box-container ol {
+  list-style: none;
+  border-top: 1px solid #c5c8ce;
+  padding-top: 10px;
+  padding-left: 0px;
+}
+.box-container ol li {
+  /*margin-bottom: 16px;*/
+}
+.box-head {
+  
+}
+.box-head h3 {
+	border-bottom: 2px solid #777;
+	display: inline-block;
+	position: relative;
+	padding: 0 0 5px 0;
+    font-size: 14px;
+  color: #2f3742;
+}
+.box-head-more {
+  float: right;
+  /*margin-right: 4px;*/
+  margin-top: 15px;
+    cursor: pointer;
+}
+
+

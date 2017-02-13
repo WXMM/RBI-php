@@ -1,0 +1,696 @@
+[ 2016-08-08T22:05:48+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:05:49+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-08-08T22:05:52+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:05:55+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:12:49+08:00 ] ::1 /model/index.php/Home/InspectRecord/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T22:12:49+08:00 ] ::1 /model/index.php/Home/InspectRecord/PlantList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `tb_plantinspect` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='30' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='480' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='481' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='485' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='486' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='488' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='489' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='490' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='505' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='506' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='507' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='508' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='509' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:12:49+08:00 ] ::1 /model/index.php/Home/Public/getTree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `dic_factory` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `dic_factory`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_workshop` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '青岛分公司' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_area` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '青岛分公司' ) AND ( `workshopId` = '罐区一' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '青岛分公司' ) AND ( `workshopId` = '罐区一' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.004001s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '青岛分公司' ) AND ( `workshopId` = '罐区二' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '青岛分公司' ) AND ( `workshopId` = '罐区二' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '江苏分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '江苏分公司' ) AND ( `workshopId` = '常减压' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '江苏分公司' ) AND ( `workshopId` = '常减压' ) AND ( `areaId` = '常减压' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '江苏分公司' ) AND ( `workshopId` = '罐区' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '江苏分公司' ) AND ( `workshopId` = '罐区' ) AND ( `areaId` = '罐区' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '秦皇岛分公司' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '秦皇岛分公司' ) AND ( `workshopId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '秦皇岛分公司' ) AND ( `workshopId` = '罐区一' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '秦皇岛分公司' ) AND ( `workshopId` = '罐区二' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '秦皇岛分公司' ) AND ( `workshopId` = '罐区二' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '秦皇岛分公司' ) AND ( `workshopId` = '罐区三' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '秦皇岛分公司' ) AND ( `workshopId` = '罐区三' ) AND ( `areaId` = '罐区三' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '湛江分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '湛江分公司' ) AND ( `workshopId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '湛江分公司' ) AND ( `workshopId` = '罐区一' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.002000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\phproot\model\Apps\Home\Controller\PublicController.class.php 第 72 行.
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '湛江分公司' ) AND ( `workshopId` = '罐区二' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '湛江分公司' ) AND ( `workshopId` = '罐区二' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '高富分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '高富分公司' ) AND ( `workshopId` = '罐区一' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '高富分公司' ) AND ( `workshopId` = '罐区一' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '高富分公司' ) AND ( `workshopId` = '罐区二' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '高富分公司' ) AND ( `workshopId` = '罐区二' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.003001s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '温州分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '温州分公司' ) AND ( `workshopId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '温州分公司' ) AND ( `workshopId` = '罐区一' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '温州分公司' ) AND ( `workshopId` = '罐区二' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '温州分公司' ) AND ( `workshopId` = '罐区二' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.003000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '宁波分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '宁波分公司' ) AND ( `workshopId` = '罐区一' )  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '宁波分公司' ) AND ( `workshopId` = '罐区一' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '宁波分公司' ) AND ( `workshopId` = '罐区二' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '宁波分公司' ) AND ( `workshopId` = '罐区二' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.001000s ]
+
+[ 2016-08-08T22:12:51+08:00 ] ::1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T22:12:51+08:00 ] ::1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.004000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.041002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.041002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:12:51+08:00 ] ::1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:12:51+08:00 ] ::1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:14:10+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.011000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.027002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.027002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:14:10+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.042002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.043003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:14:11+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:14:14+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:16:06+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.029002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:16:06+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.018001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.003000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.043002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.003000s ]
+
+[ 2016-08-08T22:16:06+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:16:06+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:20:22+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.029001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T22:20:22+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.015001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.014001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.010000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.047003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T22:20:22+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:20:23+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:59:28+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.016001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.005001s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.036002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:59:28+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.089005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.090005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T22:59:32+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T22:59:32+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T23:00:17+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.009001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.031001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.031001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001001s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T23:00:17+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-08-08T23:00:21+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T23:00:21+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T23:00:23+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.030001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.030001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-08-08T23:00:23+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.046002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.047002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002001s ]
+
+[ 2016-08-08T23:00:26+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T23:00:29+08:00 ] 127.0.0.1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T23:00:47+08:00 ] ::1 /model/index.php/Home/InspectRecord/InspectRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 28 ) ORDER BY maintanceDate  [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.028002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.028002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T23:00:48+08:00 ] ::1 /model/index.php/Home/InspectRecord/InspectRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\phproot\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.010001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecord` [ RunTime:0.009000s ]
+SQL: SELECT * FROM `tb_plantmaintancerecord` WHERE ( `pid` = 0 )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_plantmaintancerecordwall` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_plantmaintancerecordwall` WHERE ( `pid` = 0 ) AND ( `gpid` = 0 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_attachment` [ RunTime:0.008001s ]
+SQL: SELECT * FROM `tb_attachment` WHERE ( `tableId` = 'MaintenanceRecord' ) AND ( `recordId` = '' ) ORDER BY addTime  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.008000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.045002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.045002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-08-08T23:00:51+08:00 ] ::1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+ERR: 非法操作:get_detail
+
+[ 2016-08-08T23:00:51+08:00 ] ::1 /model/index.php/Home/InspectRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+ERR: 非法操作:get_detail
+

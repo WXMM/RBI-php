@@ -1,0 +1,975 @@
+[ 2016-11-12T10:42:46+08:00 ] 127.0.0.1 /model/
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.009000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:42:49+08:00 ] 127.0.0.1 /model/index.php/Admin/Index/checkUser
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.091006s ]
+SQL: SELECT `id`,`username`,`password`,`workshopId`,`realname` FROM `tb_user` WHERE ( `username` = 'user3' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select role_id from tb_role_user as user where user.user_id='4' [ RunTime:0.012001s ]
+SQL: select * from  tb_role  as role where role.id = '3'  [ RunTime:0.013000s ]
+
+[ 2016-11-12T10:42:51+08:00 ] 127.0.0.1 /model/index.php/Home/Manage/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.042003s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantalarm` [ RunTime:0.082005s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_plantalarm` WHERE ( `workshopId` = '青岛分公司' ) LIMIT 1   [ RunTime:0.011001s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `tb_plantalarm` WHERE ( status=0 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+SQL: SELECT  PlantInfo.plantNO,PlantInfo.id,PlantInfo.handleType,PlantInfo.verifyResult,PlantInfo.handler,
+                          PlantInfo.HandleDate,PlantInfo.handleType
+                  FROM    tb_plantinfo AS PlantInfo
+                  WHERE   PlantInfo.workshopId="青岛分公司"
+                  AND     PlantInfo.verifyResult= 0 [ RunTime:0.048002s ]
+SQL: SELECT     PlantInfo.plantNO,PlantInfo.id,
+                             ThicknessOrigin.handleType,ThicknessOrigin.handler,ThicknessOrigin.HandleDate,ThicknessOrigin.verifyResult
+                  FROM       tb_plantinfo AS PlantInfo
+                  LEFT JOIN  tb_measurethicknessrecord_origin AS ThicknessOrigin
+                  ON         PlantInfo.id  =  thicknessOrigin.pid
+                  WHERE      PlantInfo.workshopId="青岛分公司"
+                  AND        ThicknessOrigin.verifyResult=0  [ RunTime:0.046003s ]
+SQL: SELECT     PlantInfo.plantNO,PlantInfo.id,
+                             Thickness.handleType,Thickness.handler,Thickness.HandleDate,Thickness.verifyResult
+                  FROM       tb_plantinfo AS PlantInfo
+                  LEFT JOIN  tb_measurethicknessrecord AS Thickness
+                  ON         PlantInfo.id  =  Thickness.pid
+                  WHERE      PlantInfo.workshopId="青岛分公司"
+                  AND        Thickness.verifyResult= 0 [ RunTime:0.011001s ]
+SQL: SELECT     PlantInfo.plantNO,PlantInfo.id,
+                             RunRecord.handleType,RunRecord.handler,RunRecord.HandleDate,RunRecord.verifyResult
+                  FROM       tb_plantinfo       AS   PlantInfo
+                  LEFT JOIN  tb_runrecordlist   AS   RunRecord
+                  ON         PlantInfo.id            =  RunRecord.pid
+                  WHERE      PlantInfo.workshopId    ="青岛分公司"
+                  AND        RunRecord.verifyResult  = 0 [ RunTime:0.026001s ]
+SQL: SELECT     PlantInfo.plantNO,PlantInfo.id,
+                             DailyRecord.handleType,DailyRecord.handler,DailyRecord.HandleDate,DailyRecord.verifyResult
+                  FROM       tb_plantinfo                      AS   PlantInfo
+                  LEFT JOIN  tb_plantdailymaintainancerecord   AS   DailyRecord
+                  ON         PlantInfo.id            =  DailyRecord.pid
+                  WHERE      PlantInfo.workshopId    ="青岛分公司"
+                  AND        DailyRecord.verifyResult  = 0 [ RunTime:0.024002s ]
+SQL: SELECT     PlantInfo.plantNO,PlantInfo.id,
+                             TestRecord.handleType,TestRecord.handler,TestRecord.HandleDate,TestRecord.verifyResult
+                  FROM       tb_plantinfo                      AS   PlantInfo
+                  LEFT JOIN  tb_planttestrecord                AS   TestRecord
+                  ON         PlantInfo.id            =  TestRecord.pid
+                  WHERE      PlantInfo.workshopId    ="青岛分公司"
+                  AND        TestRecord.verifyResult  = 0 [ RunTime:0.022001s ]
+SQL: SELECT     PlantInfo.plantNO,PlantInfo.id,
+                             MaintanceRecord.handleType,MaintanceRecord.handler,MaintanceRecord.HandleDate,MaintanceRecord.verifyResult
+                  FROM       tb_plantinfo                      AS   PlantInfo
+                  LEFT JOIN  tb_plantmaintancerecord           AS   MaintanceRecord
+                  ON         PlantInfo.id            =  MaintanceRecord.pid
+                  WHERE      PlantInfo.workshopId    ="青岛分公司"
+                  AND        MaintanceRecord.verifyResult  = 0 [ RunTime:0.029002s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.038002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.039002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.005000s ]
+
+[ 2016-11-12T10:42:51+08:00 ] 127.0.0.1 /model/index.php/Home/Visualization/oneLevelMap.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SELECT     *
+                  FROM       tb_gisdata    AS  GisData
+                  WHERE      GisData.level=1  [ RunTime:0.076004s ]
+SQL: SELECT    PlantAlarm.addTime,PlantAlarm.alarmSource,PlantInfo.plantNO
+                  FROM       tb_plantalarm AS  PlantAlarm
+                  RIGHT JOIN tb_plantinfo  AS PlantInfo
+                  ON         PlantInfo.id   =  PlantAlarm.plantId
+                  WHERE      PlantInfo.workshopId="青岛分公司" and PlantAlarm.status=0 [ RunTime:0.000000s ]
+SQL: SELECT    PlantAlarm.addTime,PlantAlarm.alarmSource,PlantInfo.plantNO
+                  FROM       tb_plantalarm AS  PlantAlarm
+                  RIGHT JOIN tb_plantinfo  AS PlantInfo
+                  ON         PlantInfo.id   =  PlantAlarm.plantId
+                  WHERE      PlantInfo.workshopId="宁波分公司" and PlantAlarm.status=0 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 1 E:\wamp demo\model\Apps\Home\Controller\VisualizationController.class.php 第 51 行.
+SQL: SELECT    PlantAlarm.addTime,PlantAlarm.alarmSource,PlantInfo.plantNO
+                  FROM       tb_plantalarm AS  PlantAlarm
+                  RIGHT JOIN tb_plantinfo  AS PlantInfo
+                  ON         PlantInfo.id   =  PlantAlarm.plantId
+                  WHERE      PlantInfo.workshopId="高富分公司" and PlantAlarm.status=0 [ RunTime:0.001000s ]
+SQL: SELECT    PlantAlarm.addTime,PlantAlarm.alarmSource,PlantInfo.plantNO
+                  FROM       tb_plantalarm AS  PlantAlarm
+                  RIGHT JOIN tb_plantinfo  AS PlantInfo
+                  ON         PlantInfo.id   =  PlantAlarm.plantId
+                  WHERE      PlantInfo.workshopId="江苏分公司" and PlantAlarm.status=0 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 3 E:\wamp demo\model\Apps\Home\Controller\VisualizationController.class.php 第 51 行.
+SQL: SELECT    PlantAlarm.addTime,PlantAlarm.alarmSource,PlantInfo.plantNO
+                  FROM       tb_plantalarm AS  PlantAlarm
+                  RIGHT JOIN tb_plantinfo  AS PlantInfo
+                  ON         PlantInfo.id   =  PlantAlarm.plantId
+                  WHERE      PlantInfo.workshopId="秦皇岛分公司" and PlantAlarm.status=0 [ RunTime:0.000000s ]
+NOTIC: [8] Undefined offset: 4 E:\wamp demo\model\Apps\Home\Controller\VisualizationController.class.php 第 51 行.
+SQL: SELECT    PlantAlarm.addTime,PlantAlarm.alarmSource,PlantInfo.plantNO
+                  FROM       tb_plantalarm AS  PlantAlarm
+                  RIGHT JOIN tb_plantinfo  AS PlantInfo
+                  ON         PlantInfo.id   =  PlantAlarm.plantId
+                  WHERE      PlantInfo.workshopId="湛江分公司" and PlantAlarm.status=0 [ RunTime:0.001000s ]
+NOTIC: [8] Undefined offset: 5 E:\wamp demo\model\Apps\Home\Controller\VisualizationController.class.php 第 51 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `dic_workshop` [ RunTime:0.044003s ]
+SQL: SELECT `workshopId` FROM `dic_workshop`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.002000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:42:52+08:00 ] 127.0.0.1 /model/index.php/Home/Schedule/missionNotice.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_mission` [ RunTime:0.132007s ]
+SQL: SELECT * FROM `tb_mission` WHERE ( status=1 )  [ RunTime:0.001000s ]
+SQL: UPDATE `tb_mission` SET `nextDate`='2016-11-13' WHERE ( `id` = 5 ) [ RunTime:0.027001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: id E:\wamp demo\model\Apps\Runtime\Cache\Home\6e1ac3f03b69671368b31f0797f128ef.php 第 23 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.084005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-11-12T10:42:54+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/tankCal.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.044002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.044002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:42:54+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskCalList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.002001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `workshopId` = '青岛分公司' )  [ RunTime:0.004001s ]
+SQL: SHOW COLUMNS FROM `tb_riskrecordlist` [ RunTime:0.030001s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='30' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='532' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='533' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='535' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='536' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='537' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.094005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.095005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-11-12T10:42:55+08:00 ] 127.0.0.1 /model/index.php/Home/Public/getTree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = 4 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_factory` [ RunTime:0.150009s ]
+SQL: SELECT * FROM `dic_factory`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_workshop` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `dic_area` [ RunTime:0.075005s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.011001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() E:\wamp demo\model\Apps\Home\Controller\PublicController.class.php 第 79 行.
+
+[ 2016-11-12T10:42:57+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskCalList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `workshopId` = '青岛分公司' )  [ RunTime:0.003001s ]
+SQL: SHOW COLUMNS FROM `tb_riskrecordlist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='30' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='532' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='533' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='535' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='536' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='537' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.018001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.018001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:42:58+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.002001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.003000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-01' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.057004s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 339 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.124007s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 324 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.062004s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.023001s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( pid=28 ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.011000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-11-07' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 662 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.026001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: pHMedium E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 786 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 829 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 830 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 833 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 834 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 835 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 837 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 838 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 841 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: bottomThickness E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 860 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 868 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.091005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.091005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:42:59+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/getRiskFigPara.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.003001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.003000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( id=662 )  [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:43:17+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8] Undefined offset: 22 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 490 行.
+NOTIC: [8] Undefined offset: 22 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 491 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.099006s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:46:47+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.005000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-01' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 339 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 324 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( pid=28 ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.003000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-11-07' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 662 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: pHMedium E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 786 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 829 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 830 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 833 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 834 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 835 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 837 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 838 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 841 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: bottomThickness E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 860 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 868 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004001s ]
+
+[ 2016-11-12T10:46:48+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/getRiskFigPara.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.003000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( id=662 )  [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:47:05+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined offset: 21 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 490 行.
+NOTIC: [8] Undefined offset: 21 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 491 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.000000s ]
+
+[ 2016-11-12T10:47:13+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:48:05+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.002000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-01' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 339 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 324 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( pid=28 ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.004000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-11-07' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 662 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001001s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: pHMedium E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 786 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 829 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 830 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 833 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 834 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 835 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 837 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 838 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 841 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: bottomThickness E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 860 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 868 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.087005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.087005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.004000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.004000s ]
+
+[ 2016-11-12T10:48:06+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/getRiskFigPara.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.004000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.003000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003001s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( id=662 )  [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:48:10+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.001000s ]
+
+[ 2016-11-12T10:49:16+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.002000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.004000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-01' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 339 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 324 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( pid=28 ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.003001s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-11-07' ) LIMIT 1   [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 662 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: pHMedium E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 786 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 829 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 830 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 833 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 834 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 835 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 837 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 838 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 841 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: bottomThickness E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 860 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 868 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.084005s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.085005s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:49:16+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.003000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-01' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 339 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.002000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 324 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.028002s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( pid=28 ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.003001s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-11-07' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 662 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.002000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: useDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 746 行.
+NOTIC: [8] Undefined index: pHMedium E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 786 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 829 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 830 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 833 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 834 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 835 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 837 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 838 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 841 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: bottomThickness E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 860 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate E:\wamp demo\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 868 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.101006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.102006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.002000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:49:16+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/getRiskFigPara.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.004001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( id=662 )  [ RunTime:0.003000s ]
+
+[ 2016-11-12T10:49:19+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx/id/28.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT `plantNO` FROM `tb_plantinfo` WHERE ( id = 28 ) LIMIT 1   [ RunTime:0.002000s ]
+SQL: SELECT `D` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `useDate` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `plantName` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `fillH` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `operateTemp` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004000s ]
+SQL: SELECT `SCCisHeatTracing` FROM `tb_riskcalpara` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.005000s ]
+SQL: SELECT `wallRiskLevel` FROM `tb_risklist` WHERE ( id = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `floorRiskLevel` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `wallConsequenceLevel` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `floorConsequenceLevel` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `wallFailPro` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `floorFailPro` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT `wallDamageFactor` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `wallDamageFactor_trend` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `floorDamageFactor_trend` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `wallDamageFactor_trendYear` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: 2,2,2,2,2 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 70 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined variable: yAxisLabel E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 298 行.
+NOTIC: [8] Undefined variable: yAxisLabel E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 357 行.
+
+[ 2016-11-12T10:49:33+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.001001s ]
+
+[ 2016-11-12T10:51:13+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.002000s ]
+
+[ 2016-11-12T10:51:52+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx/id/28.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead E:\wamp demo\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.004001s ]
+SQL: SELECT `plantNO` FROM `tb_plantinfo` WHERE ( id = 28 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `D` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `useDate` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `plantName` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `fillH` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `operateTemp` FROM `tb_plantinfo` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.005000s ]
+SQL: SELECT `SCCisHeatTracing` FROM `tb_riskcalpara` WHERE ( id=28 ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.003000s ]
+SQL: SELECT `wallRiskLevel` FROM `tb_risklist` WHERE ( id = 28 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `floorRiskLevel` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `wallConsequenceLevel` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `floorConsequenceLevel` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `wallFailPro` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `floorFailPro` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `wallDamageFactor` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `wallDamageFactor_trend` FROM `tb_risklist` LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `floorDamageFactor_trend` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `wallDamageFactor_trendYear` FROM `tb_risklist` LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: 2,2,2,2,2 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 70 行.
+NOTIC: [8] Undefined offset: 1 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 2 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 3 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined offset: 4 E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 79 行.
+NOTIC: [8] Undefined variable: yAxisLabel E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 298 行.
+NOTIC: [8] Undefined variable: yAxisLabel E:\wamp demo\model\Apps\Home\Controller\ExcelController.class.php 第 357 行.
+

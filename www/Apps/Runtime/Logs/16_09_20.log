@@ -1,0 +1,650 @@
+[ 2016-09-20T23:07:06+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/index.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.007001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:07:06+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/plantList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinspect` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='30' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='480' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='481' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='485' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='486' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='488' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='489' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='490' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='505' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='506' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='507' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='508' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.011000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:07:06+08:00 ] 127.0.0.1 /model/index.php/Home/Public/getTree.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_user` WHERE ( `id` = 18 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_factory` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `dic_factory`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_workshop` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `dic_workshop` WHERE ( `factoryId` = '燃料油总公司' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_area` [ RunTime:0.013001s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '青岛分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\model\Apps\Home\Controller\PublicController.class.php 第 79 行.
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '江苏分公司' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '江苏分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '江苏分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '秦皇岛分公司' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '秦皇岛分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '秦皇岛分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.000000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\model\Apps\Home\Controller\PublicController.class.php 第 79 行.
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '秦皇岛分公司' ) AND ( `areaId` = '罐区三' )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\model\Apps\Home\Controller\PublicController.class.php 第 79 行.
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '湛江分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '湛江分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '湛江分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.001000s ]
+NOTIC: [2] Invalid argument supplied for foreach() D:\wamp\www\model\Apps\Home\Controller\PublicController.class.php 第 79 行.
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '高富分公司' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '高富分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.001001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '高富分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '温州分公司' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '温州分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '温州分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_area` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '宁波分公司' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '宁波分公司' ) AND ( `areaId` = '罐区一' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `factoryId` = '燃料油总公司' ) AND ( `workshopId` = '宁波分公司' ) AND ( `areaId` = '罐区二' )  [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:07:38+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/plantList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinspect` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='28' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='30' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='480' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='481' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='485' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='486' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='488' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='489' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='490' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='505' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='506' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='507' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantinspect` WHERE ( 1=1 AND pid='508' ) LIMIT 1   [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001001s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+NOTIC: [8] Undefined index: Plantdailymaintainance D:\wamp\www\model\Apps\Runtime\Cache\Home\c7ee536d7d07af4c543d6d03a5b9e460.php 第 47 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:07:40+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordList.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( `pid` = 28 ) ORDER BY record_dt desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=37 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=53 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=54 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=55 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=56 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=57 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=58 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=59 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=61 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=62 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=63 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=64 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=65 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=66 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=67 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=68 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=69 )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=70 )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `dic_content` WHERE ( pid=71 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 182 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 194 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 201 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 201 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 201 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 201 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 207 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 207 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 213 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 213 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 226 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 232 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 238 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 238 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 238 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 238 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 244 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 244 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 250 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 250 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 263 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 272 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 272 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 272 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 272 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 272 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 272 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 278 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 278 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 278 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 284 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 290 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 296 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 296 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 302 行.
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\043f9d413353ea633fa39dc275cd6a86.php 第 308 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.101006s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.101006s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-20T23:07:41+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=0 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=0 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=0 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.008001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-20T23:07:41+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+ERR: 非法操作:get_detail
+
+[ 2016-09-20T23:07:43+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.007001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:07:54+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/editRunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-09-20T23:07:56+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.014000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-20T23:10:38+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-20T23:10:44+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/editRunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.060003s ]
+SQL: UPDATE `tb_runrecorddetail` SET `part`='',`checkResult`='不符合要求',`remark`='管线出口' WHERE ( `id` = 0 ) [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:10:46+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.007000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.014001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.014001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-20T23:11:11+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/editRunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: UPDATE `tb_runrecorddetail` SET `part`='',`checkResult`='符合要求',`remark`='管线进口' WHERE ( `id` = 0 ) [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:11:14+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:11:37+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/editRunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: UPDATE `tb_runrecorddetail` SET `part`='',`checkResult`='符合要求',`remark`='管线进口' WHERE ( `id` = 0 ) [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:11:39+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.021002s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.021002s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:12:22+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/editRunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.007001s ]
+SQL: UPDATE `tb_runrecorddetail` SET `part`='',`checkResult`='符合要求',`remark`='管线进口' WHERE ( `id` = 0 ) [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:13:08+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.022001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-09-20T23:13:11+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.016001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.017001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-09-20T23:13:16+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/editRunRecordDetail.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.004000s ]
+SQL: UPDATE `tb_runrecorddetail` SET `part`='',`checkResult`='符合要求',`remark`='管线进口' WHERE ( `id` = 340 ) [ RunTime:0.039003s ]
+
+[ 2016-09-20T23:13:17+08:00 ] 127.0.0.1 /model/index.php/Home/RunRecord/RunRecordEdit.html?pid=13%20&&%20gpid=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_user` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_user`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( id=28 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecordlist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_runrecordlist` WHERE ( id=13 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_runrecorddetail` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_runrecorddetail` WHERE ( pid=13 )  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [2] Illegal string offset 'pid' D:\wamp\www\model\Apps\Runtime\Cache\Home\f7f27c56032f49ed2e46441a988d30fe.php 第 125 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+

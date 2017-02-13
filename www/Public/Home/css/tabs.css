@@ -1,0 +1,54 @@
+.tabbable{
+    margin-bottom: 20px;
+}
+#tabs {
+    overflow: auto;
+    width: 100%;
+    list-style: none;
+    margin-top: 10px;
+    padding: 0;
+}
+
+#tabs li {
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+
+#tabs a {
+    box-shadow: -4px 0 0 rgba(0, 0, 0, .2);
+    background: #0b80c9;
+    background: linear-gradient(220deg, transparent 10px, #0b80c9 10px);
+    color: #e5e7ec;
+    float: left;
+    font: bold 14px/35px "Microsoft YaHei";
+    height: 35px;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+#tabs a:hover {
+    color: #080808;
+    background: #dedbcd;
+}
+
+#tabs a:focus {
+    outline: 0;
+}
+
+#tabs #current a {
+    background: rgb(244, 244, 244);
+    background: linear-gradient(220deg, rgb(244, 244, 244) 10px);
+    text-shadow: none;
+    color: #333;
+}
+
+#content {
+    /*background-color: #fff;*/
+    /*background-image:         linear-gradient(top, #fff, #ddd);*/
+    border-radius: 0 2px 2px 2px;
+    box-shadow: 0 2px 2px #000, 0 -1px 0 #fff inset;
+    padding: 30px;
+}
+
+/* Remove the rule below if you want the content to be "organic" */

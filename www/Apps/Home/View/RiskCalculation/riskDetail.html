@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" type="text/css">
+    <!--<link rel="stylesheet" href="__PUBLIC__/Home/css/tankInfo.css" type="text/css">-->
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tabs.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tableList.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tableDetail.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/jquery-ui.theme.min.css" type="text/css">
+    <style>
+        #content a{
+            font-size: 14px;
+            font-weight: 100;
+            float: right;
+            padding: 5px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            background-color: transparent;
+            color: #333;
+            border: transparent;
+        }
+        #content .tab{
+            padding-top: 10px;
+        }
+        #content a:hover{
+            background-color: rgb(244, 244, 244);
+        }
+        .breadcrumb > li + li:before {
+            color: #CCCCCC;
+            content: " > ";
+            padding: 0px 5px;
+        }
+        #content{
+            padding-top: 0px;
+        }
+        /*table{*/
+        /*table-layout:fixed;*/
+        /*table-layout:fixed;*//* 只有定义了表格的布局算法为fixed，下面td的定义才能起作用。 */
+        /*}*/
+        /*thead{*/
+        /*background-color: #0078b3;*/
+        /*color: #fffff9;*/
+        /*}*/
+        /*th,td{*/
+        /*text-align: center;*/
+        /*vertical-align:middle;*/
+        /*max-width: 120px;*/
+        /*word-break:keep-all;*//* 不换行 */
+        /*white-space:nowrap;*//* 不换行 */
+        /*overflow:hidden;*//* 内容超出宽度时隐藏超出部分的内容 */
+        /*text-overflow:ellipsis;*//* 当对象内文本溢出时显示省略标记(...) ；需与overflow:hidden;一 起使用。*/
+        /*}*/
+        .borderedDetail td:nth-child(2) input,td:nth-child(4) input{
+            width: 100%;
+            height: inherit;
+        }
+        .borderedDetail td:nth-child(2) input[type="datePicker"],td:nth-child(4) input[type="datePicker"]{
+            width: 90%;
+            height: inherit;
+            float: left;
+        }
+        .borderedDetail td:nth-child(2) select,td:nth-child(4) select,textarea{
+            width:100%;
+            height: inherit;
+        }
+        .borderedDetail td:nth-child(2) input:focus,td:nth-child(4) input:focus{
+            border: none;
+        }
+        .borderedDetail tr td span{
+            width: 100%;
+        }
+        .breadcrumb > li + li:before {
+            color: #CCCCCC;
+            content: " > ";
+            padding: 0 5px;
+        }
+        .form-control{
+            border: none;
+        }
+        .panel-heading:hover{
+            cursor: pointer;
+        }
+        .panel-heading{
+            height: 40px;
+        }
+        .panel-title{
+            width: 30%;
+            float: left;
+        }
+        .label{
+            margin-left: 10px;
+        }
+        input[type="radio"]{
+            margin-left: 10px;
+            margin-right: 5px;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<a href="riskDetail.html?id=1">测试</a>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            壁板风险<span class="label label-danger">高风险</span>
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+    </div>
+    <div class="panel-body">
+        <table class="bordered">
+            <thead><th>圈板序号</th><th>损伤因子</th><th>未来损伤因子</th><th>腐蚀速率</th><th>腐蚀速率类型</th></thead>
+            <tbody>
+            <volist name="riskDetail[0]['Riskdetail']" id="rD">
+            <tr><td>{$rD.partId}</td><td>{$rD.damageFactor}</td><td>{$rD.futureDamageFactor}</td><td>{$rD.corrosionSpeed}</td><td>{$rD.corrosionType}</td></tr>
+            </volist>
+            </tbody>
+        </table>
+        <div class="wallRisk" style="width: 50%; float: left" >
+            <table class="borderedDetail">
+                <tbody>
+                <tr><td><p>壁板风险主要位于:</p></td><td>{$riskDetail[0]['wallMajorRisk']}</td></tr>
+                <tr><td><p>壁板损伤因子</p></td><td>{$riskDetail[0]['wallDamageFactor']}</td></tr>
+                <tr><td><p>壁板后果等级:</p></td><td>{$riskDetail[0]['wallConsequenceLevel']}</td></tr>
+                <tr><td><p>壁板失效可能性:</p></td><td>{$riskDetail[0]['wallFailPro']}</td></tr>
+                <tr><td><p>壁板风险等级:</p></td><td>{$riskDetail[0]['wallRiskLevel']}</td></tr>
+                <tr><td><p>下次检验日期:</p></td><td>{$riskDetail[0]['wallNextCheckDate']}</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="wallRiskFigure" style="width: 48%;float: right;margin-top: 20px">
+            <img src="__PUBLIC__/Home/img/DF.jpg"  alt="损伤因子图"  style="width: 100%;height: 100%"/>
+        </div>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            底板风险<span class="label label-warning">低风险</span>
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+    </div>
+    <div class="panel-body">
+        <div class="wallRisk" style="width: 50%; float: left" >
+            <table class="borderedDetail">
+                <tbody>
+                <tr><td><p>中幅板腐蚀速率:</p></td><td>{$riskDetail[0]['floorMiddleCorrosionSpeed']}</td></tr>
+                <tr><td><p>边缘板腐蚀速率:</p></td><td>{$riskDetail[0]['floorEdgeCorrosionSpeed']}</td></tr>
+                <tr><td><p>中幅板损伤因子:</p></td><td>{$riskDetail[0]['floorMiddleDamageFactor']}</td></tr>
+                <tr><td><p>边缘板损伤因子:</p></td><td>{$riskDetail[0]['floorEdgeDamageFactor']}</td></tr>
+                <tr><td><p>底板损伤因子:</p></td><td>{$riskDetail[0]['floorDamageFactor']}</td></tr>
+                <tr><td><p>底板失效可能性等级:</p></td><td>{$riskDetail[0]['floorFailPro']}</td></tr>
+                <tr><td><p>底板后果等级:</p></td><td>{$riskDetail[0]['floorConsequenceLevel']}</td></tr>
+                <tr><td><p>底板风险等级:</p></td><td>{$riskDetail[0]['floorRiskLevel']}</td></tr>
+                <tr><td><p>下次检验日期:</p></td><td>{$riskDetail[0]['floorNextCheckDate']}</td></tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="wallRiskFigure" style="width: 48%;float: right;margin-top: 20px">
+            <img src="__PUBLIC__/Home/img/DF.jpg"  alt="损伤因子图"  style="width: 100%;height: 100%"/>
+        </div>
+    </div>
+</div>
+</body>
+<script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+<script src="http://libs.baidu.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Home/js/content_edit.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.form.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.cookie.js"></script>
+<script>
+    $(function(){
+        //tabs菜单的切换
+        var tabs_index=$.cookie('tabs_index');
+        if(tabs_index==undefined){
+            var index=0;
+        }else{
+            var index=$.cookie('tabs_index');
+        }
+        $("#content .tab").hide(); // Initially hide all content
+        $("#tabs li").eq(index).attr("id","current"); // Activate first tab
+        $("#content .tab").eq(index).fadeIn(); // Show first tab content
+        $('#tabs a').click(function(e) {
+            e.preventDefault();
+            $("#content .tab").hide(); //Hide all content
+            $("#tabs li").attr("id",""); //Reset id's
+            $(this).parent().attr("id","current"); // Activate this
+            $.cookie('tabs_index', $(this).parent().index());
+            $('#' + $(this).attr('title')).fadeIn();
+        });
+// 展开关闭
+        $(".panel-heading").bind("click",function () {
+            if($(this).siblings(".panel-body").is(":visible")) {
+                $(this).find('.glyphicon').removeClass().addClass("glyphicon glyphicon-chevron-right");
+                $(this).siblings(".panel-body").hide();
+            }else {
+                $(this).find('.glyphicon').removeClass().addClass("glyphicon glyphicon-chevron-down");
+                $(this).siblings(".panel-body").show();
+            }
+        })
+//        $('.panel-heading').click(function(){
+//            $(this)
+//                    .toggleClass("selected")   // 添加/删除高亮
+//                    .siblings('.panel-body').toggle();  // 隐藏/显示所谓的子行
+//
+//        }).click();
+//    风险计算
+        $("#calRiskBtn").click(function(){
+            $("#calRisk .calRisk").click();
+        })
+        var options = {
+            beforeSubmit:  showRequest,  // 提交前
+            success:       showResponse // 提交后
+        }
+        $("#calRisk").ajaxForm(options);
+        //提交前进行表单验证
+        function showRequest(){
+            alert("我要开始计算风险了");
+        }
+        function showResponse(responseText){
+//            alert("风险等级为"+responseText);
+            if(responseText!==''){
+                alert("风险计算完成！！！");
+                alert(responseText);
+                $("#riskPreview").click();
+            }
+        }
+        //激活spin插件
+        $(".spinner").css('width','100%');
+        var spinner = $( ".spinner" ).spinner();
+
+
+
+
+        //-------------------------------------------------------------------------------------------------------------
+        //筛选操作
+        //减薄机理筛选
+        $("#reductionChoice select:eq(0)").change(function(){
+            var reductionSelect=$(this).find("option:selected").text();
+            var isWaterSpan=$("#reductionChoice .isWater").find("span");
+            var isSourSpan=$("#reductionChoice .isSour").find("span");
+            switch (reductionSelect){
+                case "含盐酸"    :
+                    isWaterSpan.removeClass().addClass("glyphicon glyphicon-asterisk").css("color","#e42000");
+                    isSourSpan.removeClass();
+                    break;
+                case "含H2S、H2" :
+                    isWaterSpan.removeClass();
+                    isSourSpan.removeClass();
+                    break;
+                case "含硫酸" :
+                    isWaterSpan.removeClass();
+                    isSourSpan.removeClass();
+                    break;
+                case "含氢氟酸" :
+                    isWaterSpan.removeClass();
+                    isSourSpan.removeClass();
+                    break;
+                case "含氨" :
+                    isWaterSpan.removeClass();
+                    isSourSpan.removeClass().addClass("glyphicon glyphicon-asterisk").css("color","#e42000");;
+                    break;
+                default :
+                    isWaterSpan.removeClass();
+                    isSourSpan.removeClass();
+                    break;
+
+
+            }
+        })
+
+
+    });
+</script>
+</html>

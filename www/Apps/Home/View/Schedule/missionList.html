@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+<!DOCTYPE html>
+<html>
+<head>
+    <title>表格内容</title>
+    <link rel="stylesheet" href="__PUBLIC__/bootstrap-3.0.3/css/bootstrap.min.css" type="text/css">
+    <link href="__PUBLIC__/Home/css/tableList.css" rel="stylesheet">
+    <link href="__PUBLIC__/Home/css/tableDetail.css" rel="stylesheet">
+    <style>
+        body{
+            overflow: auto;
+        }
+        .breadcrumb > li + li:before {
+            color: #CCCCCC;
+            content: " > ";
+            padding: 0px 5px;
+        }
+        .manage a{
+            text-decoration:none;
+            padding-left: 5px;
+        }
+    </style>
+</head>
+<body>
+<div style="overflow: auto">
+    <ol class="breadcrumb" style="background-color: transparent;float: left; height: 30px;width: 100%">
+        <li class="active">任务提醒</li>
+    </ol>
+    <div style="width: 98%;margin-right: auto;margin-left: auto;">
+        <div class="filterName" style="line-height: normal">
+            <div style="float: right;margin-bottom: 10px">
+                筛选：
+                <input id="filterName">
+            </div>
+        </div>
+        <table class="bordered">
+            <thead>
+            <tr><th>任务提醒</th><th>创建时间</th><th>创建人员</th><th>提醒类型</th><th>下次执行时间</th><th>备注</th><th>操作</th></tr>
+            </thead>
+            <tbody>
+            <volist name="Mission" id="sc">
+                <tr  class="" data-row-id="{$sc.id}">
+                    <td class="title" title={sc.title}>{$sc.title}</td>
+                    <!--<td class="workshopId" style="display: none" title={$fou.workshopId}>{$sc.workshopId}</td>-->
+                    <td class="setDate" title={$sc.setDate}>{$sc.setDate}</td>
+                    <td class="setter" title={$sc.setter}>{$sc.setter}</td>
+                    <td class="circle" title={$sc.circle}>
+                        <switch name="sc.circle">
+                            <case value="0" >单次提醒</case>
+                            <case value="1" >每天提醒</case>
+                            <case value="2" >每周提醒</case>
+                            <case value="3" >每月提醒</case>
+                            <case value="4" >每年提醒</case>
+                        </switch>
+                    </td>
+                    <td class="nextDate" title={$sc.nextDate}>{$sc.nextDate}</td>
+                    <td class="remark" title={$sc.remark'}>{$sc.remark}</td>
+
+                    <td class="manage">
+                        <a class="delete" data-row-id="{$sc.id}">删除</a>
+                    </td>
+                </tr>
+            </volist>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+<script src="__PUBLIC__/Jquery/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Home/js/jquery.form.js" type="text/javascript"></script>
+<script src="__PUBLIC__/Home/js/linkageMenu.js" type="text/javascript"></script>
+<script type="text/javascript">
+    $(function(){
+        //关键字搜索
+        $("#filterName").keyup(function(){
+            $(".bordered tbody tr")
+                    .hide()
+                    .filter(":contains('"+( $(this).val() )+"')")
+                    .show();
+        })
+
+        $('title', window.parent.document).html("待办事项");
+        //处理待办事项
+        $("table tbody tr .edit").click(function(){
+            var id=$(this).attr("data-row-id");
+//            $.post("{:U('Schedule/handleSchedule')}",{id:id},function(data){
+////                if(data.code==100){
+////                    $("table tbody tr .detailHide span").click();
+////                }
+//            },"JSON");
+        })
+        //删除待办事项
+        $("table tbody tr .delete").click(function(){
+            var id=$(this).attr("data-row-id");
+            if(confirm("是否确认删除？")){
+                $.post("{:U('Schedule/deleteMission')}",{id:id},function(data){
+                    if(data.code==100){
+                        alert(data.msg);
+                        location.reload();
+                    }else{
+                        alert(data.msg);
+                    }
+                },"JSON");
+            }else{
+                return false;
+            }
+
+        })
+
+    })
+</script>
+</html>
+</body>
+</html>

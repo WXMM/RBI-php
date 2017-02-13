@@ -1,0 +1,88 @@
+.riskStatistics{
+    width: 100%;
+    height: 350px;
+}
+.riskStatistics div{
+    float: left;
+}
+.riskStatistics .statisticsWallFig,.riskStatistics .statisticsBottomFig{
+    width: 300px;
+    height: 350px;
+}
+.riskMatrixFig{
+    width: 300px;
+    height: 350px;
+}
+.riskMatrixFig div{
+    float: left;
+}
+.riskMatrixFig .title{
+    width: 300px;
+    padding-bottom: 30px;
+    /*margin-left: 36px;*/
+}
+.riskMatrixFig .title h3{
+    margin: 0;
+    padding: 0;
+}
+.riskMatrix {
+    width: 50%;
+    /*margin-bottom: 30px;*/
+}
+.riskMatrix ul{
+    width: 270px;
+    height: 270px;
+    /*background-color: #74bffb;*/
+}
+.riskMatrix ul li{
+    list-style-type: none;
+    /*border-style: solid;*/
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    float: left;
+    background-color: transparent;
+    margin-bottom: 0;
+    padding: 0;
+}
+.riskMatrix ul li.content{
+   text-align: center;
+   padding-top: 12px;
+}
+.riskMatrix ul li.Xtitle{
+    background-color: transparent;
+    text-align: center;
+    height: 20px;
+
+}
+.riskMatrix ul li.Ytitle{
+    width: 20px;
+    line-height:45px;
+    text-align: right;
+    padding-right: 5px;
+}
+.riskMatrix ul li.low{
+     background-color: #fffff9;
+     border: solid;
+ }
+.riskMatrix ul li.middle{
+    background-color: #fff55e;
+    border-style: solid;
+}
+.riskMatrix ul li.middle_high{
+    background-color: #ff930a;
+    border-style: solid;
+}
+.riskMatrix ul li.high{
+    background-color: #ff0000;
+    border-style: solid;
+}
+.YFigTitle{
+    margin-top: 50px;
+    line-height: 120%;
+    width: 14px;
+}
+.XFigTitle{
+    width: 270px;
+   margin-left: 110px;
+}

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--<link href="http://libs.baidu.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">-->
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tableList.css">
+    <title></title>
+</head>
+<body>
+<div class="container">
+    <table class="bordered">
+        <thead>
+        <tr><th>附件名称</th><th>添加时间</th><th>查看附件</th><th>删除</th></tr>
+        </thead>
+        <tbody>
+        <volist name="attachment" id="vo">
+            <tr><td>{$vo.filename}</td><td class="type">{$vo.addTime}</td><td><a href="dic_content.html?type={$vo.type}">详细</a></td><td>删除</td></tr>
+        </volist>
+        </tbody>
+    </table>
+
+</div>
+<script src="http://libs.baidu.com/jquery/2.0.3/jquery.min.js"></script>
+</body>
+</html>

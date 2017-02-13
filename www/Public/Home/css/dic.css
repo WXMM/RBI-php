@@ -1,0 +1,16 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    width: 100%;
+}
+
+.container {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container h3 {
+     margin-bottom: 20px;
+}

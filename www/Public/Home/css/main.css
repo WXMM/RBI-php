@@ -1,0 +1,30 @@
+body{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+section.aside{
+    width: 18%;
+    height: 720px;
+    float: left;
+}
+.tree{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+section.content{
+    width: 82%;
+    height: 720px;
+    float: right;
+}
+div.fold{
+    width: 2%;
+    margin-top: 300px;
+    float: left;
+    cursor: pointer;
+}
+div.content_text{
+    width: 98%;
+    height: 720px;
+    float: right;
+}

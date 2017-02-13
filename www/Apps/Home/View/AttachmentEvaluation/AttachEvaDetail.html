@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <link href="__PUBLIC__/bootstrap-3.0.3/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tabs.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tableList.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/tableDetail.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/jquery-ui.min.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/jquery-ui.theme.min.css" type="text/css">
+    <link rel="stylesheet" href="__PUBLIC__/Home/css/box.css" type="text/css">
+    <style>
+        .breadcrumb > li + li:before {
+            color: #CCCCCC;
+            content: " > ";
+            padding: 0 5px;
+        }
+        .table select,.table textarea{
+            width: 100%;
+            vert-align: middle;
+        }
+        .table th:first-child{
+            width: 30%;
+        }
+        .table th:nth-child(2){
+            width: 30%;
+        }
+        .table thead tr{
+            background-color: #0b80c9;
+            color: #fffff9;
+        }
+        .AttachEvaDetail{
+            width: 90%;
+            margin-left: 20px;
+        }
+        .panel-title{
+            width: 50%;
+            float: left;
+        }
+        .panel-body{
+            display: none;
+        }
+    </style>
+    <title></title>
+</head>
+<body>
+<ol class="breadcrumb" style="background-color: transparent;float: left; height: 30px;width: 100%">
+    <li><a href="{:U('AttachmentEvaluation/index')}">完整性评价</a></li>
+    <li><a href="{:U('AttachmentEvaluation/AttachEvaList')}">附件评价</a></li>
+    <li class="active">附件评价详细</li>
+</ol>
+<div class="tankInfoDetail" style="width:100%">
+    <table class="borderedDetail" style="width: 90%;margin-left: 20px;">
+        <tbody>
+        <tr>
+            <td><p>所在厂区:</p></td><td class="floorMiddleCorrosionSpeed">{$res[0].factoryId}</td>
+            <td><p>所在车间:</p></td><td class="floorEdgeCorrosionSpeed">{$res[0].workshopId}</td>
+            <td><p>设备名称:</p></td><td class="floorMiddleDamageFactor">{$res[0].plantName}</td></tr>
+        <tr><td><p>设备位号:</p></td><td class="floorEdgeDamageFactor">{$res[0].plantNO}</td>
+            <td><p>评价日期:</p></td><td class="floorDamageFactor">{$res[0].storeMedium}</td>
+            <td><p>储罐罐型:</p></td><td class="floorFailPro">{$res[0].OilTankType}</td></tr>
+        </tbody>
+    </table>
+</div>
+<div class="AttachEvaDetail">
+    <button class="btn btn-primary" style="float: right;margin-bottom: 10px">保存</button>
+    <div style="clear: both"></div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            储罐基础检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 底板有无凹凸变形、空鼓、罐壁有无沉降、内外两侧大角焊缝和与罐体相连接的角焊缝有无裂纹、浮顶运行有无异常">a 底板有无凹凸变形、空鼓、罐壁有无沉降、内外两侧大角焊缝和与罐体相连接的角焊缝有无裂纹、浮顶运行有无异常</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 储罐基础牢固，无不均匀下沉；基础无裂缝、倾斜；罐基础周围排水通畅">b 储罐基础牢固，无不均匀下沉；基础无裂缝、倾斜；罐基础周围排水通畅</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c 罐底沉降的测量与评定，历史检查的测量记录有无问题">c 罐底沉降的测量与评定，历史检查的测量记录有无问题</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="d罐底板边缘是否已被基础护坡覆盖，有无腐蚀和积水">d罐底板边缘是否已被基础护坡覆盖，有无腐蚀和积水</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="e混凝土有无退化迹象，钢筋混凝土环墙有无断裂、劈裂、龟裂、酥碎或钢筋外露">e混凝土有无退化迹象，钢筋混凝土环墙有无断裂、劈裂、龟裂、酥碎或钢筋外露</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="f罐底板与基础贴合是否严密">f罐底板与基础贴合是否严密</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="g与罐体相连接的管道、接管有无变形">g与罐体相连接的管道、接管有无变形</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="h锚定螺栓有无变形">h锚定螺栓有无变形</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="i罐体有无明显倾斜、圆度有无明显异常">i罐体有无明显倾斜、圆度有无明显异常</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            密封系统检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 人孔、排污孔等处是否有泄漏">a 人孔、排污孔等处是否有泄漏</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 与储罐连接的第一道法兰密封处是否有泄漏，如有应立即安排处理">b 与储罐连接的第一道法兰密封处是否有泄漏，如有应立即安排处理</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c (内浮顶罐)透气窗、透光孔等部件周围的防腐情况">c (内浮顶罐)透气窗、透光孔等部件周围的防腐情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="d (外浮顶罐)盛装介质是否发生变化。如发生变化则应重点检查橡胶板、橡胶带是否适用于新介质">d (外浮顶罐)盛装介质是否发生变化。如发生变化则应重点检查橡胶板、橡胶带是否适用于新介质</td>
+                <td><select style="width: 100%">
+                    <option value=1>是</option>
+                    <option value=0>否</option>
+                </select></td>
+                <td><textarea></textarea></td></tr>
+            <tr><td title="e (外浮顶罐)检查挡雨板的使用情况，是否存在变形、缺少和搭接不好等情况">e (外浮顶罐)检查挡雨板的使用情况，是否存在变形、缺少和搭接不好等情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="f (外浮顶罐)检查罐壁是否有摩擦痕迹、是否有毛刺、尖角、焊瘤等尖锐突起部位">f (外浮顶罐)检查罐壁是否有摩擦痕迹、是否有毛刺、尖角、焊瘤等尖锐突起部位</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="g (外浮顶罐)打开挡雨板检查橡胶袋或橡胶板的使用情况，表面是否存在老化、变形、破裂；是否存在与介质发生反应或溶胀情况">g (外浮顶罐)打开挡雨板检查橡胶袋或橡胶板的使用情况，表面是否存在老化、变形、破裂；是否存在与介质发生反应或溶胀情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="h (囊式密封)橡胶袋表面，是否有麻坑、破损、鼓胀、被介质浸溶等情况存在">h (囊式密封)橡胶袋表面，是否有麻坑、破损、鼓胀、被介质浸溶等情况存在</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="i (囊式密封)橡胶袋的接头处是否粘接牢靠，无渗漏情况">i (囊式密封)橡胶袋的接头处是否粘接牢靠，无渗漏情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="j (囊式密封)填充物的弹性程度，填充物是否存在变形失弹的情况">j (囊式密封)填充物的弹性程度，填充物是否存在变形失弹的情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="k (囊式密封)橡胶袋和罐壁之间的贴合情况，要求橡胶袋与罐壁贴合严密，无可见缝隙">k (囊式密封)橡胶袋和罐壁之间的贴合情况，要求橡胶袋与罐壁贴合严密，无可见缝隙</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="l (橡胶板密封)橡胶密封板本身不得存在堆积和褶皱等情况">l (橡胶板密封)橡胶密封板本身不得存在堆积和褶皱等情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="m (橡胶板密封)橡胶板应紧贴罐壁，与罐壁的接触长度不得小于罐体圆周长的90%，最大的不接触间隙不得超过6mm">m (橡胶板密封)橡胶板应紧贴罐壁，与罐壁的接触长度不得小于罐体圆周长的90%，最大的不接触间隙不得超过6mm</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="n 检查浮盘上液位计、防转装置等开孔部位的密封情况，是否存在泄漏">n 检查浮盘上液位计、防转装置等开孔部位的密封情况，是否存在泄漏</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            阴极保护检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 检查储罐内牺牲阳极块的溶解情况，阳极与储罐的接触点是否完好，阳极是否均匀布设">a 检查储罐内牺牲阳极块的溶解情况，阳极与储罐的接触点是否完好，阳极是否均匀布设</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 阳极块的下表面与罐底板内表面的距离宜为50～70mm">b 阳极块的下表面与罐底板内表面的距离宜为50～70mm</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c 在沉积水出口部位应适当增加阳极块的数量">c 在沉积水出口部位应适当增加阳极块的数量</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="d 测其保护电位、电流密度：罐底板内表面电流密度不得低于10mA/m2；其中，有防腐涂层的钢表面保护电流密度范围应为10～30mA/m2；无防腐涂层的钢表面保护电流密度范围应为30～150mA/m2">d 测其保护电位、电流密度：罐底板内表面电流密度不得低于10mA/m2；其中，有防腐涂层的钢表面保护电流密度范围应为10～30mA/m2；无防腐涂层的钢表面保护电流密度范围应为30～150mA/m2</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            罐体防腐涂层检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 沿海或腐蚀严重的潮湿环境中，涂层厚度不小于250um，灌顶和罐底总厚度不小于300um">a 沿海或腐蚀严重的潮湿环境中，涂层厚度不小于250um，灌顶和罐底总厚度不小于300um</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 汽油，煤油和柴油内壁可采用纯环氧涂料，酚醛环氧涂料+喷锌导静电涂料，涂层总厚度不小于200um">b 汽油，煤油和柴油内壁可采用纯环氧涂料，酚醛环氧涂料+喷锌导静电涂料，涂层总厚度不小于200um</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c 喷气燃料储罐内壁应采用白色或白浅复色导静电防腐涂料，总厚度不小于200um">c 喷气燃料储罐内壁应采用白色或白浅复色导静电防腐涂料，总厚度不小于200um</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="d 外防腐涂层完好情况、边缘板腐蚀情况检查">d 外防腐涂层完好情况、边缘板腐蚀情况检查</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="e 浮船外腐蚀状况检查">e 浮船外腐蚀状况检查</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="f 罐外底腐蚀及渗水情况检查">f 罐外底腐蚀及渗水情况检查</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            呼吸阀检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 常压储罐安全管理制度有关呼吸阀的规定和巡检记录是否齐全、真实，查阅呼吸阀台帐与实际是否相符">a 常压储罐安全管理制度有关呼吸阀的规定和巡检记录是否齐全、真实，查阅呼吸阀台帐与实际是否相符</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 上次检验、检查报告及维修等资料是否齐全并且符合要求">b 上次检验、检查报告及维修等资料是否齐全并且符合要求</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c 上次报告提出的问题解决情况">c 上次报告提出的问题解决情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="d 检查呼吸阀动作、堵塞等情况，阀壳网罩、压盖衬垫使用情况">d 检查呼吸阀动作、堵塞等情况，阀壳网罩、压盖衬垫使用情况</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="e 冬季还要检查阀体有无冰冻">e 冬季还要检查阀体有无冰冻</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="f 呼吸阀的产品型号、操作压力等级">f 呼吸阀的产品型号、操作压力等级</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="g 制造日期，产品合格证，安装日期，竣工验收文件">g 制造日期，产品合格证，安装日期，竣工验收文件</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="h 运行周期内的在线检查记录">h 运行周期内的在线检查记录</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="i 历次定期检验报告">i 历次定期检验报告</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title">
+            防雷防静电设施检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 接闪器（包括避雷针、避雷带、避雷网）本体发生断裂、变形及严重锈蚀">a 接闪器（包括避雷针、避雷带、避雷网）本体发生断裂、变形及严重锈蚀</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 接地装置（包括接地体、接地线）和引下线发生断裂、变形、损伤、脱焊、锈蚀、松动、遗失">b 接地装置（包括接地体、接地线）和引下线发生断裂、变形、损伤、脱焊、锈蚀、松动、遗失</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c 跨接线发生断裂、损伤、脱焊、锈蚀、松动、遗失">c 跨接线发生断裂、损伤、脱焊、锈蚀、松动、遗失</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title" style="float: left">
+            储罐仪表系统的检验及评价
+        </h3>
+        <span class="glyphicon glyphicon-chevron-right" style="float: right"></span>
+        <div style="clear: both"> </div>
+    </div>
+    <div class="panel-body">
+        <table class="table">
+            <thead>
+            <tr><th>检查内容</th><th>检查结果</th><th>发现问题</th></tr>
+            </thead>
+            <tbody>
+            <tr><td title="a 检测仪表系统的完整性、完好性，检查检测仪表系统有无明显缺失、明显变形及明显损坏">a 检测仪表系统的完整性、完好性，检查检测仪表系统有无明显缺失、明显变形及明显损坏</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="b 仪表系统整体是否干净清洁，确保没有污物或其它物质对仪表系统正常使用产生影响">b 仪表系统整体是否干净清洁，确保没有污物或其它物质对仪表系统正常使用产生影响</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="c 确认现场仪表安装条件和安装位置；掌握被测介质的各种参数（温度、压力等）">c 确认现场仪表安装条件和安装位置；掌握被测介质的各种参数（温度、压力等）</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="d 通过检查和确认，保证仪表示值误差在规定范围内、指示波动在允许范围内">d 通过检查和确认，保证仪表示值误差在规定范围内、指示波动在允许范围内</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="e 检查气源管线、接线管、穿线盒、接线箱、 安装支架、线路槽板、保温伴热等完好性">e 检查气源管线、接线管、穿线盒、接线箱、 安装支架、线路槽板、保温伴热等完好性</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="f 检测确定仪表系统供电是否正常">f 检测确定仪表系统供电是否正常</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            <tr><td title="g 检测接线端子和相应接线电缆的完好性，是否有锈蚀、老化或其它性质的损坏储罐仪表系统的设置和安装要符合相关标准和规范及设计文件的要求检查确定仪表系统的运行环境、工作状态、控制功能、通讯功能是否正常">g 检测接线端子和相应接线电缆的完好性，是否有锈蚀、老化或其它性质的损坏
+                储罐仪表系统的设置和安装要符合相关标准和规范及设计文件的要求检查确定仪表系统的运行环境、工作状态、控制功能、通讯功能是否正常</td><td><select style="width: 100%">
+                <option value=1>是</option>
+                <option value=0>否</option>
+            </select></td><td><textarea></textarea></td></tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</div>
+</body>
+<script src="__PUBLIC__/Jquery/jquery-2.0.3.min.js"></script>
+<script src="__PUBLIC__/bootstrap-3.0.3/js/bootstrap.min.js"></script>
+<script src="__PUBLIC__/Home/js/content_edit.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="__PUBLIC__/Home/js/jquery.form.js"></script>
+<script>
+    $(function(){
+        $(".panel-heading").bind("click",function () {
+            if($(this).siblings(".panel-body").is(":visible")) {
+                $(this).find('.glyphicon').removeClass().addClass("glyphicon glyphicon-chevron-right");
+                $(this).siblings(".panel-body").hide(300);
+            }else {
+                $(this).find('.glyphicon').removeClass().addClass("glyphicon glyphicon-chevron-down");
+                $(this).siblings(".panel-body").show(300);
+            }
+        })
+    })
+</script>
+</html>

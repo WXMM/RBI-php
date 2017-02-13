@@ -1,0 +1,1195 @@
+[ 2016-10-14T13:47:29+08:00 ] 127.0.0.1 /model/index.php/Home/Calculation/riskRate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 29 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `tb_planttestrecord` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_planttestrecord` WHERE ( pid = 29 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_planttestrecordwall` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_planttestrecordwall` WHERE ( 1=1 AND pid='49' )  [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'testMethod' D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 55 行.
+NOTIC: [8] Undefined index: topFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 89 行.
+NOTIC: [8] Undefined index: topIsKeepWarm D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 90 行.
+NOTIC: [8] Undefined index: topIsCoating D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 93 行.
+NOTIC: [8] Undefined index: topLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 96 行.
+NOTIC: [8] Undefined index: topIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 97 行.
+NOTIC: [8] Undefined index: floorEdgeMaterial D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 100 行.
+NOTIC: [8] Undefined index: floorMiddleMaterial D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 101 行.
+NOTIC: [8] Undefined index: floorEdgeThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 102 行.
+NOTIC: [8] Undefined index: floorMiddleThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 103 行.
+NOTIC: [8] Undefined index: floorEdgeFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 104 行.
+NOTIC: [8] Undefined index: floorMiddleFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 105 行.
+NOTIC: [8] Undefined index: floorIsLining D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 106 行.
+NOTIC: [8] Undefined index: floorLiningStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 107 行.
+NOTIC: [8] Undefined index: floorLiningUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 108 行.
+NOTIC: [8] Undefined index: floorIsCoating D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 109 行.
+NOTIC: [8] Undefined index: floorCoatingStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 110 行.
+NOTIC: [8] Undefined index: floorCoatingUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 111 行.
+NOTIC: [8] Undefined index: floorLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 112 行.
+NOTIC: [8] Undefined index: floorIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 113 行.
+NOTIC: [8] Undefined index: wallIsKeepWarm D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 137 行.
+NOTIC: [8] Undefined index: wallKeepWarmStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 138 行.
+NOTIC: [8] Undefined index: wallKeepWarmUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 139 行.
+NOTIC: [8] Undefined index: wallIsLining D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 140 行.
+NOTIC: [8] Undefined index: wallLiningStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 141 行.
+NOTIC: [8] Undefined index: wallLiningUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 142 行.
+NOTIC: [8] Undefined index: wallCoatingStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 144 行.
+NOTIC: [8] Undefined index: wallCoatingUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 145 行.
+NOTIC: [8] Undefined index: wallLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 146 行.
+NOTIC: [8] Undefined index: wallIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall_origin` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 1 ) ORDER BY layerNO,layerId  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Uninitialized string offset: 4 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 220 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Uninitialized string offset: 4 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 237 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Uninitialized string offset: 5 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 220 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Uninitialized string offset: 5 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 237 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 655 行.
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 2 ) AND ( `layerNO` = 1 ) ORDER BY layerNO,layerId  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [8] Undefined variable: outDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: severity D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1354 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 2 ) AND ( `layerNO` = 2 ) ORDER BY layerNO,layerId  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 473 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 474 行.
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 475 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 475 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 655 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2286 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2332 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2377 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2378 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2419 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2419 行.
+
+[ 2016-10-14T13:47:42+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.005000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-09-06' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 303 ) AND ( `gpid` = 29 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = null ) AND ( `gpid` = 29 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 29 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='29' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '29' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '29' ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.004000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '29' ) AND ( `countDate` = '2016-10-08' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 352 ) AND ( `gpid` = 29 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pHMedium D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 799 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 843 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 846 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 847 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 848 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 850 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 851 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 854 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 855 行.
+NOTIC: [8] Undefined index: bottomThickness D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 873 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 881 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T13:47:42+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-10-14T13:49:59+08:00 ] 127.0.0.1 /model/index.php/Home/Calculation/riskRate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 29 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `tb_planttestrecord` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_planttestrecord` WHERE ( pid = 29 )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_planttestrecordwall` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_planttestrecordwall` WHERE ( 1=1 AND pid='49' )  [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'testMethod' D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 55 行.
+NOTIC: [8] Undefined index: topFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 89 行.
+NOTIC: [8] Undefined index: topIsKeepWarm D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 90 行.
+NOTIC: [8] Undefined index: topIsCoating D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 93 行.
+NOTIC: [8] Undefined index: topLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 96 行.
+NOTIC: [8] Undefined index: topIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 97 行.
+NOTIC: [8] Undefined index: floorEdgeMaterial D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 100 行.
+NOTIC: [8] Undefined index: floorMiddleMaterial D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 101 行.
+NOTIC: [8] Undefined index: floorEdgeThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 102 行.
+NOTIC: [8] Undefined index: floorMiddleThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 103 行.
+NOTIC: [8] Undefined index: floorEdgeFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 104 行.
+NOTIC: [8] Undefined index: floorMiddleFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 105 行.
+NOTIC: [8] Undefined index: floorIsLining D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 106 行.
+NOTIC: [8] Undefined index: floorLiningStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 107 行.
+NOTIC: [8] Undefined index: floorLiningUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 108 行.
+NOTIC: [8] Undefined index: floorIsCoating D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 109 行.
+NOTIC: [8] Undefined index: floorCoatingStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 110 行.
+NOTIC: [8] Undefined index: floorCoatingUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 111 行.
+NOTIC: [8] Undefined index: floorLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 112 行.
+NOTIC: [8] Undefined index: floorIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 113 行.
+NOTIC: [8] Undefined index: wallIsKeepWarm D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 137 行.
+NOTIC: [8] Undefined index: wallKeepWarmStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 138 行.
+NOTIC: [8] Undefined index: wallKeepWarmUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 139 行.
+NOTIC: [8] Undefined index: wallIsLining D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 140 行.
+NOTIC: [8] Undefined index: wallLiningStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 141 行.
+NOTIC: [8] Undefined index: wallLiningUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 142 行.
+NOTIC: [8] Undefined index: wallCoatingStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 144 行.
+NOTIC: [8] Undefined index: wallCoatingUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 145 行.
+NOTIC: [8] Undefined index: wallLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 146 行.
+NOTIC: [8] Undefined index: wallIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall_origin` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 1 ) ORDER BY layerNO,layerId  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Uninitialized string offset: 4 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 220 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Uninitialized string offset: 4 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 237 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Uninitialized string offset: 5 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 220 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Uninitialized string offset: 5 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 237 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 655 行.
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 2 ) AND ( `layerNO` = 1 ) ORDER BY layerNO,layerId  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [8] Undefined variable: outDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: severity D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1354 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 2 ) AND ( `layerNO` = 2 ) ORDER BY layerNO,layerId  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 473 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 474 行.
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 475 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 475 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 655 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2286 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2332 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2377 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2378 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2419 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2419 行.
+
+[ 2016-10-14T13:54:04+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.005000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-09-06' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = null ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 303 ) AND ( `gpid` = 29 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = null ) AND ( `gpid` = 29 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 29 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='29' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '29' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '29' ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.004000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '29' ) AND ( `countDate` = '2016-10-08' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 352 ) AND ( `gpid` = 29 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pHMedium D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 799 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 843 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 846 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 847 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 848 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 850 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 851 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 854 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 855 行.
+NOTIC: [8] Undefined index: bottomThickness D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 873 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 881 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.062004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.062004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T13:54:05+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-10-14T13:54:13+08:00 ] 127.0.0.1 /model/index.php/Home/Calculation/riskRate.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 29 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 27 行.
+SQL: SHOW COLUMNS FROM `tb_planttestrecord` [ RunTime:0.003000s ]
+SQL: SELECT * FROM `tb_planttestrecord` WHERE ( pid = 29 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_planttestrecordwall` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_planttestrecordwall` WHERE ( 1=1 AND pid='49' )  [ RunTime:0.000000s ]
+NOTIC: [2] Illegal string offset 'testMethod' D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 55 行.
+NOTIC: [8] Undefined index: topFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 89 行.
+NOTIC: [8] Undefined index: topIsKeepWarm D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 90 行.
+NOTIC: [8] Undefined index: topIsCoating D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 93 行.
+NOTIC: [8] Undefined index: topLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 96 行.
+NOTIC: [8] Undefined index: topIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 97 行.
+NOTIC: [8] Undefined index: floorEdgeMaterial D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 100 行.
+NOTIC: [8] Undefined index: floorMiddleMaterial D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 101 行.
+NOTIC: [8] Undefined index: floorEdgeThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 102 行.
+NOTIC: [8] Undefined index: floorMiddleThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 103 行.
+NOTIC: [8] Undefined index: floorEdgeFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 104 行.
+NOTIC: [8] Undefined index: floorMiddleFirstThickness D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 105 行.
+NOTIC: [8] Undefined index: floorIsLining D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 106 行.
+NOTIC: [8] Undefined index: floorLiningStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 107 行.
+NOTIC: [8] Undefined index: floorLiningUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 108 行.
+NOTIC: [8] Undefined index: floorIsCoating D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 109 行.
+NOTIC: [8] Undefined index: floorCoatingStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 110 行.
+NOTIC: [8] Undefined index: floorCoatingUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 111 行.
+NOTIC: [8] Undefined index: floorLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 112 行.
+NOTIC: [8] Undefined index: floorIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 113 行.
+NOTIC: [8] Undefined index: wallIsKeepWarm D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 137 行.
+NOTIC: [8] Undefined index: wallKeepWarmStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 138 行.
+NOTIC: [8] Undefined index: wallKeepWarmUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 139 行.
+NOTIC: [8] Undefined index: wallIsLining D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 140 行.
+NOTIC: [8] Undefined index: wallLiningStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 141 行.
+NOTIC: [8] Undefined index: wallLiningUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 142 行.
+NOTIC: [8] Undefined index: wallCoatingStatus D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 144 行.
+NOTIC: [8] Undefined index: wallCoatingUseDate D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 145 行.
+NOTIC: [8] Undefined index: wallLinkStyle D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 146 行.
+NOTIC: [8] Undefined index: wallIsHeatAfterWelding D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 147 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall_origin` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 1 ) ORDER BY layerNO,layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='' ) LIMIT 1   [ RunTime:0.000000s ]
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Uninitialized string offset: 4 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 220 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Uninitialized string offset: 4 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 237 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Uninitialized string offset: 5 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 220 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Uninitialized string offset: 5 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 237 行.
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 713 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 825 行.
+NOTIC: [8] Undefined index: isHeatTreatAfterWeld D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 828 行.
+NOTIC: [8] Undefined index: isHeatTracing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 833 行.
+NOTIC: [8] Undefined index: isMediumWater D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 834 行.
+NOTIC: [8] Undefined index: isSteamBlowing D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 835 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2110 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2113 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2118 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2125 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2168 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2183 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 655 行.
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 2 ) AND ( `layerNO` = 1 ) ORDER BY layerNO,layerId  [ RunTime:0.000000s ]
+NOTIC: [8] Undefined index: operatingTemp D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1376 行.
+NOTIC: [8] Undefined variable: outDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1788 行.
+NOTIC: [8] Undefined variable: severity D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1354 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+NOTIC: [8] Undefined offset: 0 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1358 行.
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall_origin` WHERE ( `pid` = 29 ) AND ( `part` = 2 ) AND ( `layerNO` = 2 ) ORDER BY layerNO,layerId  [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [2] array_search() expects parameter 2 to be array, null given D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 472 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 473 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 474 行.
+NOTIC: [8] Undefined variable: maxFloorMiddleDamageFactor D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 475 行.
+NOTIC: [2] max(): When only one parameter is given, it must be an array D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 475 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 655 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2286 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2332 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2376 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2377 行.
+NOTIC: [2] Division by zero D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2378 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2405 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2419 行.
+NOTIC: [8] Undefined index: 高 D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 2419 行.
+
+[ 2016-10-14T13:54:14+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=29
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.004000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-09-06' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 29 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = null ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 303 ) AND ( `gpid` = 29 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='0' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = null ) AND ( `gpid` = 29 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 29 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='29' )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '29' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '29' ) ORDER BY countDate desc  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.005000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '29' ) AND ( `countDate` = '2016-10-08' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 352 ) AND ( `gpid` = 29 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: pHMedium D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 799 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 843 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 846 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 847 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 848 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 850 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 851 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 854 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 855 行.
+NOTIC: [8] Undefined index: bottomThickness D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 873 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 881 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.063004s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.064004s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T13:54:15+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-10-14T13:58:57+08:00 ] 127.0.0.1 /model/index.php/Home/Calculation/filterMechanism.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined variable: SCC D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1909 行.
+NOTIC: [8] Undefined variable: reductionMechanism D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1954 行.
+NOTIC: [8] Undefined variable: reductionMechanismId D:\wamp\www\model\Apps\Home\Controller\CalculationController.class.php 第 1955 行.
+
+[ 2016-10-14T13:59:09+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskCalList.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001001s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskrecordlist` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='29' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='30' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='480' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='481' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='485' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='486' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='488' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='489' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='490' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='505' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='506' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='507' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskrecordlist` WHERE ( 1=1 AND pid='532' ) LIMIT 1   [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplate [ RunTime:0.010001s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010001s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T13:59:56+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.005000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-24' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-20' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 317 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.001001s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 313 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006000s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.004001s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.005000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-10-13' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 354 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.001000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: pHMedium D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 799 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 843 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 846 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 847 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 848 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 850 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 851 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 854 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 855 行.
+NOTIC: [8] Undefined index: bottomThickness D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 873 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 881 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.060003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.060003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.001000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-10-14T13:59:56+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+ERR: 非法操作:get_detail
+
+[ 2016-10-14T14:00:18+08:00 ] 127.0.0.1 /model/index.php/Home/Excel/create_xlsx_full.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.006001s ]
+SQL: SELECT * FROM `tb_plantinfo`  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_risklist`  [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:00:23+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/riskBasedInfo.html?id=28
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord` [ RunTime:0.005000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isWallMea` = 1 ) AND ( `Mea_dt` = '2016-11-24' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT MAX(Mea_dt) AS tp_max FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT `id` FROM `tb_measurethicknessrecord` WHERE ( `pid` = 28 ) AND ( `isBottomMea` = 1 ) AND ( `Mea_dt` = '2016-10-20' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_measurethicknessrecord_wall` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 317 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantwallboardinfo` [ RunTime:0.005000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='111' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='112' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='113' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='114' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_plantwallboardinfo` WHERE ( 1=1 AND id='115' ) LIMIT 1   [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_measurethicknessrecord_wall` WHERE ( `pid` = 313 ) AND ( `gpid` = 28 ) AND ( `part` = 2 ) ORDER BY layerNO  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_plantinfo` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_plantinfo` WHERE ( `id` = 28 )  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_risklist` [ RunTime:0.004000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( 1=1 AND pid='28' )  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `tb_riskcalpara` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `tb_riskcalpara` WHERE ( `pid` = '28' )  [ RunTime:0.000000s ]
+SQL: SELECT * FROM `tb_risklist` WHERE ( `pid` = '28' ) ORDER BY countDate desc  [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `tb_riskdetail` [ RunTime:0.005000s ]
+SQL: SELECT MAX(countDate) AS tp_max FROM `tb_risklist` WHERE ( `pid` = '28' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT `id` FROM `tb_risklist` WHERE ( `pid` = '28' ) AND ( `countDate` = '2016-10-13' ) LIMIT 1   [ RunTime:0.001000s ]
+SQL: SELECT * FROM `tb_riskdetail` WHERE ( `pid` = 354 ) AND ( `gpid` = 28 ) AND ( `part` = 1 ) ORDER BY layerId  [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `dic_content` [ RunTime:0.005001s ]
+SQL: SELECT * FROM `dic_content`  [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplace [ RunTime:0.001000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: useDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 759 行.
+NOTIC: [8] Undefined index: pHMedium D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 799 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 842 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 843 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 846 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 847 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 848 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 850 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 851 行.
+NOTIC: [8] Undefined index: isWallboardPaintcoat D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 854 行.
+NOTIC: [8] Undefined index: isWallboardInstallLining D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 855 行.
+NOTIC: [8] Undefined index: bottomThickness D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 873 行.
+NOTIC: [8] Undefined index: BottomInstallLiningDate D:\wamp\www\model\Apps\Runtime\Cache\Home\8e520c233dea03faca646ce3a5d6d676.php 第 881 行.
+INFO: Run Behavior\ParseTemplate [ RunTime:0.061003s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.061003s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCache [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTrace [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-10-14T14:00:24+08:00 ] 127.0.0.1 /model/index.php/Home/RiskCalculation/get_detail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCache [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead D:\wamp\www\model\ThinkPHP\Library\Think\Db\Driver\Mysql.class.php 第 52 行.
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=1 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=2 and node.pid=1 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=22 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=21 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=20 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=18 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=17 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=16 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=15 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=23 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=24 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=25 and node.status=1 [ RunTime:0.000000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=97 and node.status=1 [ RunTime:0.001000s ]
+SQL: select node.id,node.name,node.status,node.title from tb_role as role,tb_role_user as user,tb_access as access ,tb_node as node where user.user_id='4' and user.role_id=role.id and ( access.role_id=role.id  or (access.role_id=role.pid and role.pid!=0 ) ) and role.status=1 and access.node_id=node.id and node.level=3 and node.pid=117 and node.status=1 [ RunTime:0.001000s ]
+ERR: 非法操作:get_detail
+

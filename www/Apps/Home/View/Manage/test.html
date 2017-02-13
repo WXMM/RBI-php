@@ -1,0 +1,72 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>My First Grid</title>
+    <!--<link rel="stylesheet" href="__PUBLIC__/Jquery/ui-base/jquery-ui.theme.min.css" type="text/css">-->
+    <!--<link rel="stylesheet" type="text/css" media="screen" href="__PUBLIC__/Jquery/jqGrid/css/ui.jqgrid.css" />-->
+
+    <!--<style>-->
+        <!--html, body {-->
+            <!--margin: 0;-->
+            <!--padding: 0;-->
+            <!--font-size: 75%;-->
+        <!--}-->
+        <!--#list{-->
+            <!--width: 100%;-->
+        <!--}-->
+    <!--</style>-->
+    <!--<script src="__PUBLIC__/Jquery/jquery-3.0.0.min.js" type="text/javascript"></script>-->
+    <!--<script src="__PUBLIC__/Jquery/jqGrid/js/i18n/grid.locale-cn.js" type="text/javascript"></script>-->
+    <!--<script src="__PUBLIC__/Jquery/jqGrid/js/jquery.jqGrid.min.js" type="text/javascript"></script>-->
+
+
+    <!--<script type="text/javascript">-->
+        <!--//        var width=$(window).width();-->
+        <!--jQuery(document).ready(function(){-->
+            <!--jQuery("#list").jqGrid({-->
+                <!--url: "{:U('RiskCalculation/test')}",-->
+                <!--datatype:"json",-->
+<!--//                width:width,-->
+<!--//                height:400,-->
+                <!--colNames:['厂区','车间', '设备','储罐','Total','Notes'],-->
+                <!--colModel :[-->
+                    <!--{name:'invid',index:'invid',  sorttype:'int'},-->
+                    <!--{name:'invdate',index:'invdate',  sorttype:'date', datefmt:'Y-m-d',search:true,stype:'text'},-->
+                    <!--{name:'amount',index:'amount',  align:'right',sorttype:'float'},-->
+                    <!--{name:'tax',index:'tax',  align:'right',sorttype:'float'},-->
+                    <!--{name:'total',index:'total', align:'right',sorttype:'float'},-->
+                    <!--{name:'note',index:'note', sortable:false}-->
+                <!--],-->
+                <!--pager: '#pager',-->
+<!--//                rowNum:10,-->
+                <!--viewrecords: true-->
+<!--//                autowidth:true-->
+            <!--});-->
+            <!--jQuery("#ed4").click(function() {-->
+                <!--jQuery("#rowed4").jqGrid('editRow', "13");-->
+                <!--this.disabled = 'true';-->
+                <!--jQuery("#sved4").attr("disabled", false); });-->
+            <!--jQuery("#sved4").click(function() {-->
+                <!--jQuery("#rowed4").jqGrid('saveRow', "13", checksave);-->
+                <!--jQuery("#sved4").attr("disabled", true);-->
+                <!--jQuery("#ed4").attr("disabled", false); });-->
+            <!--function checksave(result) {-->
+                <!--if (result.responseText == "")-->
+                <!--{-->
+                    <!--alert("Update is missing!");-->
+                    <!--return false;-->
+                <!--} return true;-->
+            <!--}-->
+            <!--jQuery("#grid_id").filterToolbar();-->
+        <!--});-->
+    <!--</script>-->
+</head>
+<body>
+<!--<table id="list">-->
+<!--</table>-->
+<!--<div id="pager"></div>-->
+<!--<input type="BUTTON" id="ed4" value="Edit row 13" /> <input type="BUTTON" id="sved4" disabled='true' value="Save row 13" />-->
+</body>
+</html>
